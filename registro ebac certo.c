@@ -128,6 +128,7 @@ int main() //Função principal
     	printf("\t1 - Registrar nomes\n"); //Layout da tela inicial
     	printf("\t2 - Consultar nomes\n"); //Layout da tela inicial
     	printf("\t3 - Deletar nomes\n\n"); //Layout da tela inicial
+    	printf("\t4 - Sair do Sistema\n\n"); //Layout da tela inicial
     	printf("Opção: ");//fim do menu
     	
     	scanf("%d" , &opcao); //armazenamento a escolha do usuário
@@ -146,6 +147,11 @@ int main() //Função principal
 			
 			case 3:
 			deletar(); //chamada de funções
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
 			break;
 			
 			default:
